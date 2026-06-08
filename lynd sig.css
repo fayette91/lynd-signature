@@ -1,0 +1,84 @@
+:root{
+  --backd-1: #ededed;
+  --backd-2: #efefef;
+  --backd-3: #ebebeb;
+  --bordd-1: #d7d5d5;
+  --bordd-2: #ccc;
+  --bordd-3: #bbb;
+  --txtd-0: #aaa;
+  --txtd-1: #444;
+  --txtd-2: #555;
+  --txtd-3: #777;
+  --backn-2: #191919;
+  --backn-1: #151515;
+  --backn-3: #101010;
+  --bordn-0: #191919;
+  --bordn-1: #2c2c2c;
+  --bordn-2: #222;
+  --bordn-3: #333;
+  --txtn-1: #ccc;
+  --txtn-2: #aaa;
+  --txtn-3: #888;
+  --criminales: #323A5F;  
+}
+
+.ghost-s-bx {width: 320px; height: 190px; margin: auto; position: relative; overflow: hidden; border: 10px solid var(--bordd-1); outline: 1px solid var(--criminales); outline-offset: -8px; transition: all ease-in-out 0.7s}
+
+.ghost-s-bx img {margin: auto; transition: all ease-in-out 0.7s}
+
+.ghost-s-bx:hover {transition: all ease-in-out 0.7s; outline-offset: -2px}
+
+.ghost-s-bx:hover img {transition: all ease-in-out 0.7s; filter: grayscale(1)}
+
+.ghost-s-back {width: 320px; height: 195px; margin: -195px 0px 0px 0px; position: absolute; background: var(--criminales); mix-blend-mode: multiply; opacity: 0; transition: all ease-in-out 0.7s}
+
+.ghost-s-bx:hover .ghost-s-back {transition: all ease-in-out 0.7s; opacity: 1}
+
+.ghost-s-uno {width: 320px; height: auto; margin: -40px 0px 0px 0px; position: absolute; font-family: google sans code; color: #ddd; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; transition: all ease-in-out 0.7s; transition-delay: 0.3s; opacity: 1; background: rgb(0, 0, 0, .5); padding: 10px}
+
+@keyframes gbright {0% {opacity: 1;} 50% {opacity: 0.2;} 100% {opacity: 1;}}
+
+.ghost-s-uno span {font-family: audiowide; font-size: 12px; background: var(--criminales); padding: 2px; animation: gbright 2s ease 0s infinite normal none}
+
+.ghost-s-bx:hover .ghost-s-uno {transition: all ease-in-out 0.7s; margin: 0px 0px 0px 0px; opacity: 0}
+
+.ghost-s-line {width: 0px; height: 0px; margin: -160px 0px 0px 0px; background: #aaa; position: absolute; transition: all ease-in-out 0.7s}
+
+.line-icon {width: 30px; height: 30px; margin: -250px 0px 0px 260px; position: absolute; color: #aaa; font-size: 30px; color: #aaa; transition: all ease-in-out 0.7s;}
+
+.ghost-s-bx:hover .ghost-s-line {transition: all ease-in-out 0.7s; width: 261px; height: 1px}
+
+.ghost-s-bx:hover .line-icon {transition: all ease-in-out 0.7s; opacity: 1; margin: -175px 0px 0px 260px}
+
+.ghost-s-line-b {width: 0px; height: 0px; margin: -40px 0px 0px 350px; background: #aaa; position: absolute; transition: all ease-in-out 0.7s}
+
+.ghost-s-bx:hover .ghost-s-line-b {transition: all ease-in-out 0.7s; width: 320px; height: 1px; margin: -40px 0px 0px 0px}
+
+.ghost-s-dos {width: 150px; height: auto; margin: -120px 0px 0px 80px; position: absolute; color: #ccc; font-family: google sans code; font-size: 10px; text-transform: uppercase; text-align: center; line-height: 150%; letter-spacing: 1px; transition: all ease-in-out 0.7s; opacity: 0;}
+
+.g-glitch {position: relative; color: #fff; z-index: 1; font-family: audiowide; font-size: 15px; font-weight: bold;}
+
+.g-glitch:before, .g-glitch:after {display: block; content: attr(data-text); position: absolute; top: 0px; left: 12px; opacity: 0.8;}
+
+.g-glitch:before {animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; color: #00FFFF; z-index: -1;}
+
+.g-glitch:after {animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite; color: #FF00FF; z-index: -2}
+
+@keyframes glitch-it {
+   0% { transform: translate(0); }
+   20% { transform: translate(-2px, 1px); }
+   40% { transform: translate(-2px, -1px); }
+   60% { transform: translate(2px, 1px); }
+   80% { transform: translate(1px, -1px); }
+   to { transform: translate(0); }
+}
+
+.ghost-s-bx:hover .ghost-s-dos {transition: all ease-in-out 0.7s; opacity: 1; transition-delay: 0.7s}
+
+body.night .ghost-s-bx {border: 10px solid var(--bordn-1)}
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Staatliches&display=swap" rel="stylesheet">
+<div class="mar-sig-bx"><img src="https://i.imgur.com/BYuPxCb.png" style="width: 320px; height: 180px"><div class="mar-sig-bc"></div><div class="mar-sig-tit">Shut down my mind</div><div class="msig-tit">Is the heart brave enough yet</div><div class="msig-titd"><span>And show me the birds</span> The birds, they rise Premonitions of the other side</div></div>
+<link href="https://dl.dropbox.com/scl/fi/lmi4rkb92rmdgakbrhs6h/Marlowe-Sig.css?rlkey=eiyis5anpcfe3qapjkz24lrgp&st=w1jh0xuf&dl=0" rel="stylesheet">
